@@ -95,7 +95,7 @@ button {
 }
 
 button:hover {
-  background-color: #ffffff; /* White background on hover */
+  background-color: rgb(38, 38, 255)
   color: black; /* Black text color on hover */
 }
 
