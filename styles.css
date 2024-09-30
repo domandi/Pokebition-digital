@@ -1,0 +1,144 @@
+/* General body styling */
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  margin: 10px;
+  padding: 10px;
+  background: linear-gradient(to right, rgb(0, 35, 141), #0040ff); /* Royal blue gradient */
+  color: #ffffff;
+  text-align: center; /* Centers text horizontally across the entire page */
+  font-size: 20px;
+}
+
+/* Header styling */
+header {
+  display: flex; /* Use flexbox for header layout */
+  align-items: center; /* Vertically center the items in the header */
+  justify-content: center; /* Horizontally center the items in the header */
+  background: linear-gradient(to right, rgb(0, 35, 141), #0040ff); /* Royal blue gradient */
+  color: white; /* White text color */
+  padding: 20px; /* Adds space around the header content */
+  margin: 0 auto; /* Center the header itself on the page */
+}
+
+/* Header logo styling */
+.header-logo {
+  width: 50px; /* Set a smaller width for the logo */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 10px; /* Add space between the logo and site title */
+}
+
+/* Navigation styling */
+nav {
+  margin: 20px 20px; /* Space above and below the navigation */
+}
+
+nav ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  display: flex; /* Arrange links in a row */
+  justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+  margin: 0 15px; /* Space between links */
+}
+
+nav a {
+  color: white; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 20px; /* Increase font size for links */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+  color: #212121; /* Change color on hover */
+}
+
+nav a:active {
+  opacity: 0.4;
+}
+
+/* Main section styling */
+main {
+  margin: 20px; /* Adds space around the main content */
+}
+
+/* Product section styling */
+#products {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Space between grid items */
+  padding: 30px; /* Adds space around the content */
+  border-radius: 20px; /* Rounds the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+  background-color: rgb(30, 30, 30); /* Dark background for the products section */
+}
+
+/* Footer styling */
+footer {
+  text-align: center; /* Center the text in the footer */
+  color: #ffffff; /* Light gray text color */
+  padding: 10px; /* Adds space around the footer content */
+  margin-top: 20px; /* Adds space above the footer */
+}
+
+/* Button styling */
+button {
+  background-color: #000000; /* Black background for the button */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Adds padding inside the button */
+  border: solid 3px; /* Removes the default border */
+  border-radius: 20px; /* Rounds the corners of the button */
+  cursor: pointer; 
+  font-size: 15px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: black; /* Black text color on hover */
+}
+
+button:active {
+  opacity: 0.7; /* Slightly transparent when clicked */
+}
+
+/* Center the individual product box */
+.product {
+  display: flex; /* Use flexbox for the product container */
+  flex-direction: column; /* Stack title vertically above image and details */
+  align-items: center; /* Center the title */
+  background: linear-gradient(to right, #0035d5, #0040ff);
+  padding: 20px; /* Adds space around the product content */
+  border-radius: 20px; /* Rounds the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+  text-align: center; /* Centers text inside product boxes */
+}
+
+/* Product details styling */
+.product-details {
+  display: flex; /* Use flexbox to align the image and info side by side */
+  align-items: center; /* Vertically align the items in the center */
+  gap: 20px; /* Adds space between the image and the text */
+}
+
+/* Code card image styling */
+.code-card {
+  width: 100px; /* Set a fixed width for the image */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+/* Info section styling */
+.info {
+  display: flex;
+  flex-direction: column; /* Stack price and button vertically */
+  justify-content: center;
+  text-align: left;
+}
+
+/* Heading styling for products */
+#products h2 {
+  grid-column: span 3; /* Span across all three columns */
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
